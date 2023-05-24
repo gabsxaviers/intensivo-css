@@ -260,6 +260,10 @@ footer {
   form {
     margin: 9.5rem 0 9.5rem 10.9rem;
   }
+  
+  .hide {
+    display: block;
+  }
 
   
 }
