@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  --base-font: 'Mulish', sans-serif;
+  --fs-title: 3.2rem;
+  --fs-subtitle: 2.0rem;
+  --fs-card: 2.9rem;
+  --fs-text: 1.6rem;
+  --fs-contact: 3.2rem;
+
+  --white: #ffffff;
+  --accent-color: #B52184;
+  --text-base-color: #312D64;
+  --background-gray: #F9F4FB;
+  --background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+}
+
+body {
+  background: var(--background-gray);
+  font-family: var(--base-font);
+}
+
+.page {
+  max-width: 43rem;
+  margin: 0 auto;
+}
+
+#header {  
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title {
+  margin-top: 1.7rem;
+}
+
+.title h1 {
+  font-weight: 900;
+  font-size: var(--fs-title);
+  line-height: 4rem;
+
+  color: var(--accent-color);   
+}
+
+.title p {  
+  font-weight: 600;
+  font-size: var(--fs-subtitle);
+  line-height: 2.5rem;
+
+  color: var(--text-base-color);
+
+  margin-bottom: 3.5rem;
+}
+
+#main {
+  background: var(--background);   
+  margin-top: 9.3rem;
+
+  padding: 5.29rem 3.9rem;
+}
+
+.cards {
+  display: grid;
+  gap: 4.96rem;
+}
+
+.card {
+  background: var(--white);
+  padding: 2.6rem;
+
+  border-radius: 1.98rem;
+}
+
+.text-card {
+  max-width: 26.5rem; 
+}
+
+.text-card h3 {
+  font-weight: 900;
+  font-size: var(--fs-card);
+  line-height: 3.7rem;
+
+  color: var(--accent-color);
+
+  margin-top: 2rem;
+}
+
+.text-card p {
+  font-weight: 600;
+  font-size: var(--fs-text);
+  line-height: 2rem;
+
+  color: var(--text-base-color);
+
+  margin-top: 1rem;
+}
+
+#contact {
+  padding: 7.8rem 3.9rem 6.5rem 4rem;
+}
+
+button,
+input,
+fieldset,
+textarea {
+  border: none;
+  background: none;
+  font-family: var(--base-font);
+}
+
+form h2 {
+  font-weight: 900;
+  font-size: var(--fs-contact);
+  line-height: 4rem;
+
+  color: var(--accent-color);
+
+  margin-bottom: 4.3rem;
+}
+
+form .input-wrapper {
+  margin-bottom: 2.4rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 0.15rem solid var(--text-base-color);
+  border-radius: 1.6rem;
+  padding: 1.2rem 1.6rem 1.6rem;
+  color: var(--text-base-color);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+form textarea {
+  height: 12.6rem;
+}
+
+
+form input::placeholder,
+form textarea::placeholder {
+  color: var(--text-base-color);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+form input::placeholder {
+  padding-left: 2.8rem;
+}
+
+#contact button {
+  background: var(--background);
+  border-radius: 1.6rem;
+  padding: 1.05rem 1.6rem;
+
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+
+  color: var(--white);
+
+  cursor: pointer;
+  transition: filter 200ms;
+}
+
+#contact button:hover {
+  filter: brightness(0.9);
+}
+
+#name {
+  background: url(./assets/user.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+#email {
+  background: url(./assets/mail.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+footer {
+  background: var(--background);
+  padding: 3.2rem 1.6rem;
+  text-align: center;
+
+  font-weight: 600;
+  font-size: 1.9rem;
+  line-height: 2.4rem;
+
+  color: var(--white);
+}
+
+@media (min-width: 700px) {
+  :root {
+    --fs-title: 5.8rem;
+    --fs-subtitle: 3.2rem;
+    --fs-card: 3.5rem;
+    --fs-text: 1.9rem;
+    --fs-contact: 4.2rem;
+  }
+
+  .page {
+    max-width: 135rem;
+  }
+
+  #header {
+    display: flex;
+    flex-direction: row-reverse; 
+    gap: 2.8rem;
+  }
+
+  .astronaut img {
+    width: 53rem;   
+  }
+
+  .title {
+    margin-top: 25rem;
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start;
+  }
+
+  .title h1 {
+    margin-bottom: 2rem;
+  }
+
+  .title p {
+    margin-bottom: 14rem;
+  }
+
+  .button-down {
+   align-items: flex-start;
+  }
+
+  #main {
+    padding: 6.4rem 11.1rem;    
+    
+  }
+
+  .cards {
+    display: flex;
+    gap: 6rem;
+  }
+
+  #contact{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  form {
+    margin: 9.5rem 0 9.5rem 10.9rem;
+  }
+
+  
+}
